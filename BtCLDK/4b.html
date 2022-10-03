@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
+
 <body>
-$END$
+<p id="A"></p>
+<p id="B"></p>
+<script>
+    a = +prompt("Enter the a");
+    b = +prompt("Enter the b");
+    A = a*a;
+    B = Math.pow(a, b);
+    document.getElementById("A").innerText=("A"+ A)
+    document.getElementById("B").innerText=("B"+ B)
+
+</script>
+
 </body>
 </html>

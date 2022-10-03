@@ -1,10 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
+<p id="Tam giác"></p>
 <body>
-$END$
+<script>
+    a = +prompt("Enter the a");
+    b = +prompt("Enter the b");
+    c = +prompt("Enter the c");
+    if((a+b)>c&& (a,b,c)>0) {
+        if((a*a+b*b==c*c)){
+            ketqua = 'Tam giác vuông';
+        }else if(a==b&&b==c){
+            ketqua = 'Tam giác đều';
+        }else  if(a==c||b==c||a==b){
+            ketqua = 'Tam giác cân';
+        } else {ketqua = 'Tam giác thường';
+        }
+    } else  {
+        ketqua = 'khongphaitamgiac';
+    }
+    //document.getElementById("Tam giác").innerHTML = "Đây là :"+ ketqua;
+    alert(ketqua);
+</script>
+
+
+
+
 </body>
 </html>

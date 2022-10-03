@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+  let numbers=[2,-2,-1,0,-113,132,199,-15];
+  let temp
+  let j=0
+  for(let i=0;i<numbers.length;i++) {
+    temp=numbers[i]-Math.floor(numbers[i])
+    if(numbers[i]<0&&temp===0) {j++
+    }
+  }
+  alert("Số số nguyên âm trong chuỗi là : "+j)
+</script>
+
 </body>
 </html>
